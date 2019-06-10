@@ -9,6 +9,16 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Template\Attribute;
 
 /**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+ function ive_theme_suggestions_page_alter(&$suggestions, $variables) {
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if (is_object($node)) {
+    $suggestions[] = 'page__nodetype__' . $node->bundle();
+  }
+}
+
+/**
  * Implements hook_preprocess_HOOK() for HTML document templates.
  *
  * Adds body classes if certain regions have content.
