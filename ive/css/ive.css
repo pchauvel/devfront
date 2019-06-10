@@ -1,0 +1,28 @@
+#header {
+    background: #fff;
+}
+
+#header .site-branding a {
+    font-size: 2rem;
+}
+.path-frontpage h2.node__title a{
+    font-size: 2rem;
+    font-family: "Georgia";
+    text-transform: uppercase;
+}
+.region-primary-menu .menu-item a.is-active{
+    background: orange;
+    color: #fff;
+}
+.sidebar h2{
+    text-transform: uppercase;
+    border-color: orange;
+    font-style: italic;
+    font-weight: bold;
+}
+#header .site-branding a,
+.path-frontpage h2.node__title a,
+.region-primary-menu .menu a,
+.sidebar h2{
+    color: orange;
+}
