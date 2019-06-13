@@ -1,0 +1,16 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.flex-container > div {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+.flex-container > div,
+.field--name-field-tags.field--type-entity-reference{
+  outline: 1px solid red;
+  text-align: center;
+  margin: 0;
+}

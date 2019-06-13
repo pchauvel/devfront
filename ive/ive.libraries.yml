@@ -3,6 +3,11 @@ ive:
     theme:
       css/ive.css: {}
 
+article_teaser:
+  css:
+    layout:
+      css/article-teaser.css: {}
+
 global-styling:
   version: VERSION
   css:
