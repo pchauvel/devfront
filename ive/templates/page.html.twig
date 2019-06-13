@@ -98,6 +98,11 @@
         {% endif %}
       </div>
     </div>
+   {% if page.bottom_wide %}
+    <div id="bottom-wide">
+        {{ page.bottom_wide }}
+    </div>
+   {% endif %}
     {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
       <div class="featured-bottom">
         <aside class="layout-container clearfix" role="complementary">
